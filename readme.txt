@@ -1,10 +1,10 @@
 === AB Background Slidshow ===
-Contributors: Aboobacker P
+Contributors: Aboobacker P Ummer
 Donate link: http://aboobacker.com/
 Tags: slideshow, background slideshow, AB BG slideshow, AB background slideshow
 Requires at least: 3.0
 Tested up to: 3.4.2
-Stable tag: 1.0
+Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -42,5 +42,7 @@ Answer.
 = 1.0 =
 * Initial Release
 
+= 1.1 =
+* Fixed critical issue
 
 Any questions [mail@aboobacker.com](mailto:mail@aboobacker.com "mail@aboobacker.com").

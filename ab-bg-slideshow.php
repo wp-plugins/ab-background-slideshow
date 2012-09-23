@@ -3,8 +3,8 @@
 /*
 	Plugin Name: AB Background Slidshow
   	Plugin URI: http://wordpress.org/extend/plugins/ab-background-slidshow
-  	Version: 1.0
- 	Author: Aboobacker P (abooze)
+  	Version: 1.1
+ 	Author: Aboobacker P Ummer
  	Author URI: http://aboobacker.com
  	Description: A beautiful slideshow on your website background.
  	Tags: Background slideshow, abooze slideshow, BG slideshow, bg slider
@@ -14,7 +14,7 @@ ob_start();
 function abinclude_files($lang) {
     wp_enqueue_style('bgstretcher', plugins_url('/bgstretcher.css', __FILE__));
     wp_enqueue_script( 'jquery' );
-    wp_enqueue_script('bgstretcher', plugins_url('/js/bgstretcher', __FILE__));
+    wp_enqueue_script('bgstretcher', plugins_url('/js/bgstretcher.js', __FILE__));
 }
 if(!is_admin())
 	add_action('init', 'abinclude_files');
