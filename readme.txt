@@ -18,10 +18,6 @@ You can manage the background images from the Wordpress admin panel easily.
 
 == Installation ==
 
-This section describes how to install the plugin and get it working.
-
-e.g.
-
 1. Upload `ab-bg-slideshow` folder to the `/wp-content/plugins/` directory
 1. Activate the plugin through the 'Plugins' menu in WordPress
 1. Go to Settings-> AB BG Slideshow, and upload the background images
