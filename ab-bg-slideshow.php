@@ -3,7 +3,7 @@
 /*
 	Plugin Name: AB Background Slidshow
   	Plugin URI: http://wordpress.org/extend/plugins/ab-background-slidshow
-  	Version: 1.1
+  	Version: 1.2
  	Author: Aboobacker P Ummer
  	Author URI: http://aboobacker.com
  	Description: A beautiful slideshow on your website background.
@@ -238,13 +238,12 @@ function ab_bg_show($args = array(), $content = null) {
 	$newline = "\n"; // line break
 	
 	echo 'images: [';
+	$count = 1;
 	foreach((array)$wp_cycle_images as $image => $data) {
-		
-		//echo $data['file_url'];
-		
-		echo "'" . $data['file_url'] . "', ";
-				
-
+		$imgsCount = sizeof($wp_cycle_images);
+		echo "'" . $data['file_url'] . "'";
+		if($count != $imgsCount) echo ", ";
+		$count++;		
 	}
 	echo "]";
 }

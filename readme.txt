@@ -4,7 +4,7 @@ Donate link: http://aboobacker.com/
 Tags: slideshow, background slideshow, AB BG slideshow, AB background slideshow
 Requires at least: 3.0
 Tested up to: 3.4.2
-Stable tag: 1.1
+Stable tag: 1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -40,5 +40,8 @@ Answer.
 
 = 1.1 =
 * Fixed critical issue
+
+= 1.2 =
+* Fixed minor bug
 
 Any questions [mail@aboobacker.com](mailto:mail@aboobacker.com "mail@aboobacker.com").
