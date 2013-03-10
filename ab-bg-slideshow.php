@@ -3,7 +3,7 @@
 /*
 	Plugin Name: AB Background Slidshow
   	Plugin URI: http://wordpress.org/extend/plugins/ab-background-slidshow
-  	Version: 1.2
+  	Version: 1.3
  	Author: Aboobacker P Ummer
  	Author URI: http://aboobacker.com
  	Description: A beautiful slideshow on your website background.
@@ -11,14 +11,16 @@
 */
 ob_start();
 // Link javascript & css files
-function abinclude_files($lang) {
+
+//Note: This plugin conatin many future development codes; just NM them :)
+function abinclude_bgfiles($lang) {
     wp_enqueue_style('bgstretcher', plugins_url('/bgstretcher.css', __FILE__));
     wp_enqueue_script( 'jquery' );
     wp_enqueue_script('bgstretcher', plugins_url('/js/bgstretcher.js', __FILE__));
 }
 if(!is_admin())
-	add_action('init', 'abinclude_files');
-	
+	add_action('init', 'abinclude_bgfiles');
+
 function ab_bg_show_script() {
 ?>
 	<script type="text/javascript">
@@ -43,8 +45,8 @@ function ab_bg_show_script() {
         });
     </script>
 <?php } 
-	add_action('wp_head', 'ab_bg_show_script');
 
+add_action('wp_head', 'ab_bg_show_script');
 
 //	pull the settings from the db
 $wp_cycle_settings = get_option('wp_cycle_settings');
@@ -82,6 +84,7 @@ function ab_show_admin_page() {
 //	the settings management form - abooze
 	echo '</div>';
 }
+
 function ab_bg_handle_upload() {
 	global $wp_cycle_settings, $wp_cycle_images;
 	//	upload the image
@@ -154,6 +157,7 @@ function ab_bg_images_update_check() {
 		update_option('wp_cycle_images', $wp_cycle_images);
 	}
 }
+
 function ab_bg_images_admin() { ?>
 	<?php global $wp_cycle_images; ?>
 	<?php ab_bg_images_update_check(); ?>
@@ -199,7 +203,7 @@ function ab_bg_images_admin() { ?>
 				<input type="hidden" name="wp_cycle_images[<?php echo $image; ?>][thumbnail]" value="<?php echo $data['thumbnail']; ?>" />
 				<input type="hidden" name="wp_cycle_images[<?php echo $image; ?>][thumbnail_url]" value="<?php echo $data['thumbnail_url']; ?>" />
 				<th scope="row" class="column-slug"><img src="<?php echo $data['thumbnail_url']; ?>" /></th>
-				<td class="column-slug"> <a style="line-height:80px !important;" href="?page=ab-bg-slideshow&amp;delete=<?php echo $image; ?>" class="button">Delete</a></td>
+				<td class="column-slug"> <a href="?page=ab-bg-slideshow&amp;delete=<?php echo $image; ?>" class="button">Delete</a></td>
 			</tr>
 		<?php endforeach; ?>
 		<input type="hidden" name="wp_cycle_images[update]" value="Updated" />
@@ -210,6 +214,7 @@ function ab_bg_images_admin() { ?>
 
 <?php
 }
+
 //////////////* Option to be added for chosing different diamensions start end*///////////////
 //////////////////////////////////////////////////////////////////////////////////////////
 function ab_bg_settings_validate1($input) {
@@ -247,5 +252,4 @@ function ab_bg_show($args = array(), $content = null) {
 	}
 	echo "]";
 }
-
 ?>
