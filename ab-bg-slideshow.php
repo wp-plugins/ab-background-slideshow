@@ -1,8 +1,8 @@
 <?php
 @ini_set('display_errors','Off');
 /*
-	Plugin Name: AB Background Slidshow
-  	Plugin URI: http://wordpress.org/extend/plugins/ab-background-slidshow
+	Plugin Name: AB Background Slideshow
+  	Plugin URI: http://wordpress.org/extend/plugins/ab-background-slideshow
   	Version: 1.3
  	Author: Aboobacker P Ummer
  	Author URI: http://aboobacker.com
