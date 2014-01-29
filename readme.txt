@@ -1,4 +1,4 @@
-=== AB Background Slidshow ===
+=== AB Background Slideshow ===
 Contributors: Aboobacker P Ummer
 Donate link: http://aboobacker.com/
 Tags: slideshow, background slideshow, AB BG slideshow, AB background slideshow
