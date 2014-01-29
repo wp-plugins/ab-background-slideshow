@@ -1,6 +1,6 @@
 === AB Background Slideshow ===
 Contributors: Aboobacker P Ummer
-Donate link: http://aboobacker.com/
+Donate link: http://wp.aboobacker.com/
 Tags: slideshow, background slideshow, AB BG slideshow, AB background slideshow
 Requires at least: 3.0
 Tested up to: 3.5.1
