@@ -2,8 +2,8 @@
 Contributors: Aboobacker P Ummer
 Donate link: http://wp.aboobacker.com/
 Tags: slideshow, background slideshow, AB BG slideshow, AB background slideshow
-Requires at least: 3.0
-Tested up to: 3.5.1
+Requires at least: 4.0
+Tested up to: 4.2.1
 Stable tag: 1.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
